@@ -42,9 +42,9 @@ public class UserService {
 	}
 	
 	private void updateData(User newObj, User obj) {
-		newObj.setName(obj.getEmail());
+		newObj.setName(obj.getName());
 		newObj.setEmail(obj.getEmail());
-	}
+	} 
 
 	public User fromDTO(UserDTO objDTO) {
 		return new User(objDTO.getId(), objDTO.getName(), objDTO.getEmail());
